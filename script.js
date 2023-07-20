@@ -1,10 +1,13 @@
-// Add your JavaScript code here
-// Initialize Tilt.js for committee images
-$('.committee-image').tilt({
-    maxTilt: 20,
-    perspective: 1000,
-    scale: 1.05,
-    speed: 300,
+VanillaTilt.init(document.querySelector(".discover-committees-img"), {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2,
 });
 
-// You can add additional JavaScript code here for any other interactive features or bonus functionalities.
+VanillaTilt.init(document.querySelector(".discover-interaction-img"), {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2,
+});
