@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.home {
+    width: 100%;
+    height: 110vh;
+    background-color: #c1c1c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container {
+    width: 100%;
+    max-width: 1050px;
+    height: 80%;
+    padding: 20px;
+}
+
+.home-container .home-image-cont1 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.home-container .home-image-cont2 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.home-container .home-title-container {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    line-height: 90px;
+    align-items: center;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Gloock', 'Poppins', sans-serif;
+}
+
+.home-container div img {
+    width: 48px;
+    object-fit: cover;
+}
+
+.discover {
+    width: 100%;
+    height: 160vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #c0c0c0;
+}
+
+.discover-container {
+    width: 100%;
+    max-width: 1000px;
+    height: 80%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.discover-committees,
+.discover-interaction {
+    max-width: 1000px;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.discover-committees-img,
+.discover-interaction-img {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.discover-committees-img img,
+.discover-interaction-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.discover-committees-text,
+.discover-interaction-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 10px;
+}
+
+.discover-committees-text h1,
+.discover-interaction-text h1 {
+    width: 100%;
+    text-align: left;
+    font-family: 'Gloock', 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.discover-committees-text p,
+.discover-interaction-text p {
+    width: 80%;
+    margin-top: 20px;
+    font-family: 'Space Mono', 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.thought {
+    width: 100%;
+    height: 110vh;
+    background-color: #3a6ea5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thought-images{
+    position: absolute;
+    top: 270vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background-color: #3a6ea5;
+    overflow: hidden;
+    grid-template-columns: repeat(8, minmax(10px, 1fr));
+    justify-content: center;
+    grid-auto-rows: min-content;
+    grid-template-rows: repeat(8, min-content);
+    gap: 60px;
+}
+
+.thought-images img {
+    opacity: 0.5;
+}
+
+.thought-images img:nth-child(5n + 2){
+    opacity: 0.8;
+}
+
+.thought-images img:nth-child(5n + 4){
+    opacity: 0.2;
+}
+
+.thought-text {
+    width: 60%;
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Gloock', 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1199px) {
+    .home-container .home-title-container {
+        font-size: 64px;
+    }
+
+    .discover-committees,
+    .discover-interaction {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home-container .home-title-container {
+        font-size: 32px;
+    }
+
+    .discover-committees,
+    .discover-interaction {
+        flex-direction: column;
+    }
+}
