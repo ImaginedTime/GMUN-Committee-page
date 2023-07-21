@@ -417,20 +417,17 @@ footer {
     .discover {
         height: 240vh;
     }
-
     .discover-container {
         height: 100%;
         gap: 0px;
         justify-content: space-evenly;
     }
-
     .discover-committees,
     .discover-interaction {
         flex-direction: column;
         height: 100vh;
         justify-content: space-evenly;
     }
-
     .discover-committees-img,
     .discover-interaction-img {
         width: 90%;
@@ -452,32 +449,29 @@ footer {
 
     .thought-images {
         top: 350vh;
+        gap: 10px;
     }
 
     .committees {
         height: 440vh;
         justify-content: space-evenly;
     }
-
     .committees-heading {
         width: 80%;
         text-align: center;
         font-size: 3rem;
     }
-
     .committees-container {
         gap: 50px;
         width: 100%;
         height: 400vh;
     }
-
     .committee {
         flex-direction: column;
         width: 90%;
         height: 150vh;
         gap: 30px;
     }
-
     .committee-text {
         width: 90%;
         height: 50%;
@@ -487,12 +481,10 @@ footer {
     .committee-text h1, .committee-text p {
         text-align: center;
     }
-
     .committee-img {
         width: 90%;
         height: 110%;
     }
-
     .committee-img img {
         border-radius: 20px;
         height: 100%;
@@ -518,5 +510,35 @@ footer {
         height: 90vh;
         flex-direction: column;
         gap: 20px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .discover-committees-img,
+    .discover-interaction-img {
+        width: 90%;
+        height: 50%;
+    }
+
+    .thought{
+        height: 40vh;
+    }
+    .thought-images{
+        height: 40vh;
+    }
+    .thought-text {
+        font-size: 2rem;
+    }
+
+    .committee-img {
+        width: 95%;
+        height: 80%;
+    }
+
+    .join-container {
+        width: 90%;
+    }
+    .join-button {
+        width: 80vw;
     }
 }
